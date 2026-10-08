@@ -1,0 +1,8 @@
+# Private Planungsnotizen - nie pushen
+PROJEKTPLAN.md
+SCHRITTE.md
+
+# OS-/Editor-Müll
+.DS_Store
+Thumb.db
+.vscode/
