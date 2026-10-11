@@ -11,37 +11,81 @@
     <header>
         <span id="time"></span>
         <h1>Arbeitszeit Tracker</h1>
-        <button id="settingsIcon" type="button" data-ziel="tab-einstellungen" aria-label="Einstellungen">⚙️</button>
+        <button id="settingsIcon" type="button" data-ziel="tab-einstellungen" aria-label="Einstellungen">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="3"/>
+            <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/>
+            </svg>
+        </button>
     </header>
 
     <main>
-        <section id="tab-tag">
+        <section id="tab-tag" class="active">
+            <h2>Tag</h2>
 
         </section>
 
         <section id="tab-monat">
+            <h2>Monat</h2>
         
         </section>
 
         <section id="tab-prognose">
+            <h2>Prognose</h2>
 
         </section>
 
         <section id="tab-saldo">
-
+            <h2>Saldo</h2>
         </section>
 
         <section id="tab-einstellungen">
-
+            <h2>Einstellungen</h2>
         </section>
 
     </main>
 
     <nav>
-        <button type="button" data-ziel="tab-tag">Tag</button>
-        <button type="button" data-ziel="tab-monat">Monat</button>
-        <button type="button" data-ziel="tab-prognose">Prognose</button>
-        <button type="button" data-ziel="tab-saldo">Saldo</button>
+        <button type="button" data-ziel="tab-tag">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect x="3" y="4" width="18" height="17" rx="2"/>
+            <line x1="3" y1="9" x2="21" y2="9"/>
+            <line x1="8" y1="2" x2="8" y2="6"/>
+            <line x1="16" y1="2" x2="16" y2="6"/>
+            <text x="12" y="17.5" text-anchor="middle" font-size="7.5" font-weight="700" fill="currentColor" stroke="none" font-family="system-ui,sans-serif">8</text>
+            </svg>
+                <span>Tag</span>
+        </button>
+
+        <button type="button" data-ziel="tab-monat">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect x="3" y="4" width="18" height="17" rx="2"/>
+            <line x1="3" y1="9" x2="21" y2="9"/>
+            <line x1="8" y1="2" x2="8" y2="6"/>
+            <line x1="16" y1="2" x2="16" y2="6"/>
+            </svg>
+                <span>Monat</span>
+        </button>
+
+        <button type="button" data-ziel="tab-prognose">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <polyline points="3 17 9 11 13 15 21 7"/>
+            <polyline points="15 7 21 7 21 13"/>
+            </svg>
+                <span>Prognose</span>
+        </button>
+
+        <button type="button" data-ziel="tab-saldo">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <line x1="12" y1="4" x2="12" y2="20"/>
+            <line x1="5" y1="7" x2="19" y2="7"/>
+            <path d="M5 7 3 13h4z"/>
+            <path d="M19 7 17 13h4z"/>
+            <line x1="8" y1="20" x2="16" y2="20"/>
+            </svg>
+                <span>Saldo</span>
+        </button>
+
     </nav>
 
 
