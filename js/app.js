@@ -1,3 +1,7 @@
+import { status, tage, neuerTag, speichern, laden } from "./daten.js";
+
+laden();
+
 const buttons = document.querySelectorAll("[data-ziel]");
 
 buttons.forEach(function(button) {
